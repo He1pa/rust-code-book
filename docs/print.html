@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Rust源码剖析</a></li><li class="chapter-item expanded affix "><a href="preface.html">前言</a></li><li class="chapter-item expanded "><a href="rustc/index.html"><strong aria-hidden="true">1.</strong> Rust编译器</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rustc/basic/index.html"><strong aria-hidden="true">1.1.</strong> 基础结构</a></li><li class="chapter-item expanded "><a href="rustc/lexer/index.html"><strong aria-hidden="true">1.2.</strong> 词法分析</a></li><li class="chapter-item expanded "><a href="rustc/parser/index.html"><strong aria-hidden="true">1.3.</strong> 语法分析</a></li><li class="chapter-item expanded "><a href="rustc/checker/index.html"><strong aria-hidden="true">1.4.</strong> 语义分析</a></li><li class="chapter-item expanded "><a href="rustc/ir/index.html"><strong aria-hidden="true">1.5.</strong> 中间代码表示</a></li></ol></li><li class="chapter-item expanded "><a href="rust-tools/index.html"><strong aria-hidden="true">2.</strong> Rust外围工具</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rust-tools/cargo/index.html"><strong aria-hidden="true">2.1.</strong> Cargo包管理</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rust-tools/wasm/index.html"><strong aria-hidden="true">2.1.1.</strong> WASM包管理</a></li></ol></li><li class="chapter-item expanded "><a href="rust-tools/lint/index.html"><strong aria-hidden="true">2.2.</strong> Lint工具</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rust-tools/lint/lint-pass.html"><strong aria-hidden="true">2.2.1.</strong> Lint 与 LintPass</a></li><li class="chapter-item expanded "><a href="lint/combinedlintpass.html"><strong aria-hidden="true">2.2.2.</strong> CombinedLintPass</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="open-source/index.html"><strong aria-hidden="true">3.</strong> Rust开源项目</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Rust源码剖析</a></li><li class="chapter-item expanded affix "><a href="preface.html">前言</a></li><li class="chapter-item expanded "><a href="rustc/index.html"><strong aria-hidden="true">1.</strong> Rust编译器</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rustc/basic/index.html"><strong aria-hidden="true">1.1.</strong> 基础结构</a></li><li class="chapter-item expanded "><a href="rustc/lexer/index.html"><strong aria-hidden="true">1.2.</strong> 词法分析</a></li><li class="chapter-item expanded "><a href="rustc/parser/index.html"><strong aria-hidden="true">1.3.</strong> 语法分析</a></li><li class="chapter-item expanded "><a href="rustc/checker/index.html"><strong aria-hidden="true">1.4.</strong> 语义分析</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rustc/checker/lint/index.html"><strong aria-hidden="true">1.4.1.</strong> Lint工具</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rustc/checker/lint/lint-pass.html"><strong aria-hidden="true">1.4.1.1.</strong> Lint 与 LintPass</a></li><li class="chapter-item expanded "><a href="rustc/checker/combinedlintpass.html"><strong aria-hidden="true">1.4.1.2.</strong> CombinedLintPass</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="rustc/ir/index.html"><strong aria-hidden="true">1.5.</strong> 中间代码表示</a></li></ol></li><li class="chapter-item expanded "><a href="rust-tools/index.html"><strong aria-hidden="true">2.</strong> Rust外围工具</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rust-tools/cargo/index.html"><strong aria-hidden="true">2.1.</strong> Cargo包管理</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rust-tools/wasm/index.html"><strong aria-hidden="true">2.1.1.</strong> WASM包管理</a></li></ol></li><li class="chapter-item expanded "><a href="rust-tools/clippy/index.html"><strong aria-hidden="true">2.2.</strong> Clippy</a></li></ol></li><li class="chapter-item expanded "><a href="open-source/index.html"><strong aria-hidden="true">3.</strong> Rust开源项目</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -159,10 +159,6 @@
 <div style="break-before: page; page-break-before: always;"></div><h1 id="词法分析"><a class="header" href="#词法分析">词法分析</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="语法分析"><a class="header" href="#语法分析">语法分析</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="语义分析"><a class="header" href="#语义分析">语义分析</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="中间代码表示"><a class="header" href="#中间代码表示">中间代码表示</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="rust外围工具"><a class="header" href="#rust外围工具">Rust外围工具</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="cargo包管理"><a class="header" href="#cargo包管理">Cargo包管理</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="wasm包管理"><a class="header" href="#wasm包管理">WASM包管理</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="lint-工具"><a class="header" href="#lint-工具">Lint 工具</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="lint-与-lintpass"><a class="header" href="#lint-与-lintpass">Lint 与 LintPass</a></h1>
 <h2 id="背景"><a class="header" href="#背景">背景</a></h2>
@@ -200,7 +196,7 @@ pub trait LintPass {
 }
 <span class="boring">}</span></code></pre></pre>
 <p>需要注意的是，尽管刚刚的描述中说到<code>trait</code> 类似于接口而 <code>Lint</code> 是一个 struct，但 <code>Lint</code> 和 <code>LintPass</code> 之间并不是 OO 中一个“类”和它的“方法”的关系。而是在声明 <code>LintPass</code> 会生成一个实现了该 trait 的同名的 struct，该 struct 中的 <code>get_lints()</code> 方法会生成对应的 <code>Lint</code> 定义。</p>
-<p><img src="rust-tools/lint/./images/lint_lintpass.jpeg" alt="lint vs. lintpass" /></p>
+<p><img src="rustc/checker/lint/./images/lint_lintpass.jpeg" alt="lint vs. lintpass" /></p>
 <p>这与 rustc-dev-guide 的描述也保持了一致:</p>
 <blockquote>
 <p>A lint might not have any lint pass that emits it, it could have many, or just one -- the compiler doesn't track whether a pass is in any way associated with a particular lint, and frequently lints are emitted as part of other work (e.g., type checking, etc.).</p>
@@ -392,6 +388,11 @@ for c in crates{
 <li>Rust Clippy: <a href="https://github.com/rust-lang/rust-clippy">https://github.com/rust-lang/rust-clippy</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="combinedlintpass"><a class="header" href="#combinedlintpass">CombinedLintPass</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="中间代码表示"><a class="header" href="#中间代码表示">中间代码表示</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="rust外围工具"><a class="header" href="#rust外围工具">Rust外围工具</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="cargo包管理"><a class="header" href="#cargo包管理">Cargo包管理</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="wasm包管理"><a class="header" href="#wasm包管理">WASM包管理</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="clippy"><a class="header" href="#clippy">Clippy</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rust开源项目"><a class="header" href="#rust开源项目">Rust开源项目</a></h1>
 
                     </main>
